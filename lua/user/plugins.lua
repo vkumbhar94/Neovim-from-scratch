@@ -82,6 +82,7 @@ return packer.startup(function(use)
 
 	-- Telescope
 	use { "nvim-telescope/telescope.nvim", commit = "76ea9a898d3307244dce3573392dcf2cc38f340f" }
+  --use { "nvim-telescope/telescope.nvim", tag = '0.1.4' }
 
 	-- Treesitter
 	use {
@@ -92,6 +93,23 @@ return packer.startup(function(use)
 	-- Git
 	use { "lewis6991/gitsigns.nvim", commit = "2c6f96dda47e55fa07052ce2e2141e8367cbaaf2" }
 
+  -- Vaibhav Kumbhar Start
+  -- Github Copilot
+  use ("github/copilot.vim")
+  use ("fatih/vim-go")
+  use ("Shougo/deoplete.nvim")
+  use ("zchee/deoplete-go")
+  use ("BurntSushi/ripgrep")
+  use ("sharkdp/fd")
+  -- VK: markdown preview start
+--  use ({
+--    "iamcco/markdown-preview.nvim",
+--    run = function() vim.fn["mkdp#util#install"]() end,
+--  })
+--  use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
+
+  -- VK: markdown preview end
+  -- Vaibhav Kumbhar End
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
 	if PACKER_BOOTSTRAP then

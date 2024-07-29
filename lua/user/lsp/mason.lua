@@ -1,5 +1,5 @@
 local servers = {
-	"lua_ls",
+	"lua_ls@3.7.4",
 	-- "cssls",
 	-- "html",
 	-- "tsserver",
